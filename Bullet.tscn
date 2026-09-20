@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bvv45dd5t44ja"]
+
+[ext_resource type="Script" uid="uid://dmiw0q1xgoos7" path="res://bullet.gd" id="1_7281b"]
+[ext_resource type="Texture2D" uid="uid://blwt0ipphh2hy" path="res://assets/bullet/shot-1.png" id="2_u8st5"]
+[ext_resource type="Texture2D" uid="uid://d0jesdidcjfkd" path="res://assets/bullet/shot-2.png" id="3_7awvy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vrlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u8st5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7awvy")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
+radius = 11.0
+
+[node name="Bullet" type="Area2D" unique_id=1448745150]
+z_index = 2
+collision_layer = 9
+collision_mask = 5
+script = ExtResource("1_7281b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1293087205]
+position = Vector2(0, -1.3567216)
+scale = Vector2(-3.4922638, 4.5362673)
+sprite_frames = SubResource("SpriteFrames_8vrlf")
+frame_progress = 0.18139455
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=729379877]
+shape = SubResource("CircleShape2D_1vivr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

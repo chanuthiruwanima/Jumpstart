@@ -1,0 +1,243 @@
+[gd_scene format=4 uid="uid://cnyu4a84g8w84"]
+
+[ext_resource type="Texture2D" uid="uid://d0uktd4p6gjgj" path="res://assets/background.png" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://divlvq8uj1taq" path="res://player.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dgyh2tvxv63gn" path="res://assets/middleground.png" id="2_lquwl"]
+[ext_resource type="TileSet" uid="uid://r5w45xc0umjf" path="res://tileset.tres" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bvv45dd5t44ja" path="res://Bullet.tscn" id="5_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://cxapng8lgo42f" path="res://assets/player/player-idle/player-idle-1.png" id="6_0odxb"]
+[ext_resource type="Texture2D" uid="uid://b2xx26qgkmwoj" path="res://assets/player/player-idle/player-idle-2.png" id="7_lswn8"]
+[ext_resource type="Texture2D" uid="uid://bvr0coi3l7ocb" path="res://assets/player/player-idle/player-idle-3.png" id="8_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://ba3p4sh7ck0bx" path="res://assets/player/player-idle/player-idle-4.png" id="9_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://cvga8hm13adbn" path="res://assets/player/player-jump/player-jump-1.png" id="10_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://bhdg1b117mik7" path="res://assets/player/player-jump/player-jump-2.png" id="11_kq58d"]
+[ext_resource type="Texture2D" uid="uid://cyt1s78mp7fot" path="res://assets/player/player-jump/player-jump-3.png" id="12_seu75"]
+[ext_resource type="Texture2D" uid="uid://rkne0qssblpl" path="res://assets/player/player-jump/player-jump-4.png" id="13_htxhm"]
+[ext_resource type="Texture2D" uid="uid://cqpdu1pclhxre" path="res://assets/player/player-jump/player-jump-5.png" id="14_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://c2x32fk8plcn7" path="res://assets/player/player-jump/player-jump-6.png" id="15_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://c4bu0sw2e4i8r" path="res://assets/player/player-run/player-run-1.png" id="16_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://ct0j0itsi6n5c" path="res://assets/player/player-run/player-run-2.png" id="17_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://cpcsump7cprg3" path="res://assets/player/player-run/player-run-3.png" id="18_facbu"]
+[ext_resource type="Texture2D" uid="uid://cpdxkxrm4tf5x" path="res://assets/player/player-run/player-run-4.png" id="19_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://dqkkfmfy7ntwa" path="res://assets/player/player-run/player-run-5.png" id="20_come4"]
+[ext_resource type="Texture2D" uid="uid://crra8j3k68cyq" path="res://assets/player/player-run/player-run-6.png" id="21_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://daxl3acfr6rrt" path="res://assets/player/player-run/player-run-7.png" id="22_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://ddniapja841lr" path="res://assets/player/player-run/player-run-8.png" id="23_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://cnbfiml83ty1e" path="res://assets/player/player-run/player-run-9.png" id="24_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://bmgb3fn7v8xhv" path="res://assets/player/player-run/player-run-10.png" id="25_gngh3"]
+[ext_resource type="Texture2D" uid="uid://xk4w4w7nf8co" path="res://assets/player/player-stand/player-stand-1.png" id="28_kq58d"]
+[ext_resource type="Script" uid="uid://cfclf3knt1qir" path="res://crab.gd" id="29_facbu"]
+[ext_resource type="Texture2D" uid="uid://8phxdx7e5gnv" path="res://assets/player/player-stand/player-stand-2.png" id="29_seu75"]
+[ext_resource type="Texture2D" uid="uid://dxnxe6igxtfin" path="res://enemies/crab-idle/crab-idle-1.png" id="30_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://bujphpq7vnchb" path="res://assets/player/player-stand/player-stand-3.png" id="30_htxhm"]
+[ext_resource type="Texture2D" uid="uid://2rl7sa2iqwxw" path="res://enemies/crab-idle/crab-idle-2.png" id="31_come4"]
+[ext_resource type="Texture2D" uid="uid://rwp8tuxir6yb" path="res://enemies/crab-idle/crab-idle-3.png" id="32_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://c26jxtl0xlysj" path="res://enemies/crab-idle/crab-idle-4.png" id="33_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://cbhy717k36j6y" path="res://enemies/crab-walk/crab-walk-1.png" id="34_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://bmnthfi0scoem" path="res://enemies/crab-walk/crab-walk-2.png" id="35_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://cojc2jsuugfja" path="res://enemies/crab-walk/crab-walk-3.png" id="36_gngh3"]
+[ext_resource type="Texture2D" uid="uid://7psg4rvftaxt" path="res://enemies/crab-walk/crab-walk-4.png" id="37_0n3wm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(60, 102)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_0odxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lswn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a6jrf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xuqvo")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_qsp4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kq58d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_seu75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_htxhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jq2sk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4k2k6")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_0rl1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ok6jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_facbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_b1qrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_come4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_h8e4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4lmeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_0cp0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d2t1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_gngh3")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_kq58d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_seu75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_htxhm")
+}],
+"loop": 0,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v5gy4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_b1qrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_come4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_h8e4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_4lmeg")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_0cp0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_d2t1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_gngh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_0n3wm")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
+size = Vector2(25, 21.999992)
+
+[node name="Node" type="Node" unique_id=1429588719]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=132306606]
+scroll_scale = Vector2(0.05, 0.05)
+repeat_size = Vector2(4.25, 3.705)
+
+[node name="background" type="Sprite2D" parent="Parallax2D" unique_id=656013144]
+position = Vector2(580, 324)
+scale = Vector2(4.8041663, 3.7045455)
+texture = ExtResource("1_1bvp3")
+
+[node name="middleground" type="Sprite2D" parent="Parallax2D" unique_id=356835252]
+position = Vector2(577, 319)
+scale = Vector2(4.25, 3.6704545)
+texture = ExtResource("2_lquwl")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2052159812]
+position = Vector2(5, 383)
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAHACMAAAACAAEAAAABAAMAAAACAAEAAAACAAMAAAADAAEAAAADAAMAAAADAAEAAAAEAAMAAAAEAAEAAAAFAAMAAAAFAAEAAAAGAAMAAAAFAAEAAAAHAAMAAAAGAAEAAAACAAQAAAAOAAgAAAABAAQAAAAOAAEAAAABAAUAAAAOAAEAAAABAAYAAAAOAAEAAAAHAAQAAAAQAAEAAAAHAAUAAAAQAAEAAAAHAAYAAAAQAAEAAAADAAQAAAAOAAgAAAACAAUAAAAOAAgAAAADAAUAAAAOAAgAAAACAAYAAAAOAAgAAAADAAYAAAAOAAgAAAAEAAQAAAAOAAgAAAAFAAQAAAAOAAgAAAAGAAQAAAAOAAgAAAAGAAUAAAAOAAgAAAAFAAUAAAAOAAgAAAAEAAUAAAAOAAgAAAAEAAYAAAAOAAgAAAAFAAYAAAAOAAgAAAAGAAYAAAAOAAgAAAALAAMAAAAOAAgAAAALAAIAAAAOAAgAAAAMAAIAAAAOAAgAAAAMAAMAAAAOAAgAAAANAAIAAAAOAAgAAAANAAMAAAAOAAgAAAALAAQAAAAOAAgAAAAMAAQAAAAOAAgAAAANAAQAAAAOAAgAAAANAAUAAAAOAAgAAAAMAAUAAAAOAAgAAAALAAUAAAAOAAgAAAAKAAIAAAAOAAEAAAAKAAMAAAAOAAEAAAAKAAQAAAAOAAEAAAAKAAUAAAAOAAEAAAAKAAYAAAAOAAEAAAAOAAIAAAAQAAEAAAAOAAQAAAAQAAEAAAAOAAMAAAAQAAEAAAAOAAUAAAAQAAEAAAAOAAYAAAAQAAEAAAALAAEAAAAIAAEAAAAMAAEAAAAIAAEAAAANAAEAAAAIAAEAAAAKAAEAAAACAAEAAAAOAAEAAAAGAAEAAAALAAYAAAAOAAgAAAANAAYAAAAOAAgAAAAMAAYAAAAOAAgAAAARAP//AAAIAAcAAAASAP//AAAIAAcAAAATAP//AAABAAcAAAASAP7/AAAGAAYAAAAUAP//AAAIAAcAAAAUAP7/AAAIAAYAAAAXAP3/AAAIAAcAAAAYAP3/AAADAAcAAAAZAP3/AAAEAAcAAAAYAPz/AAADAAYAAAAZAPz/AAAEAAYAAAAaAP3/AAAIAAcAAAAbAP3/AAAIAAcAAAALAAcAAAAPAAgAAAAMAAcAAAAPAAgAAAANAAcAAAAPAAgAAAANAAgAAAAPAAgAAAAMAAgAAAAPAAgAAAALAAgAAAAPAAgAAAACAAcAAAAPAAgAAAADAAcAAAAPAAgAAAAEAAcAAAAPAAgAAAAGAAcAAAAPAAgAAAAFAAcAAAAPAAgAAAAFAAgAAAAPAAgAAAAGAAgAAAAPAAgAAAACAAgAAAAPAAgAAAAEAAgAAAAPAAgAAAADAAgAAAAPAAgAAAABAAcAAAAOAAEAAAABAAgAAAAOAAEAAAAKAAcAAAAOAAEAAAAKAAgAAAAOAAEAAAAOAAcAAAAQAAEAAAAOAAgAAAAQAAEAAAAHAAcAAAAQAAEAAAAHAAgAAAAQAAEAAAAcAAEAAAACAAEAAAAdAAEAAAAFAAEAAAAeAAEAAAAFAAEAAAAfAAEAAAAFAAEAAAAgAAEAAAAFAAEAAAAbAAEAAAAMAAEAAAAcAAIAAAAOAAEAAAAdAAIAAAAOAAgAAAAeAAIAAAAOAAgAAAAfAAIAAAAOAAgAAAAgAAIAAAAOAAgAAAAgAAMAAAAOAAgAAAAfAAMAAAAOAAgAAAAeAAMAAAAOAAgAAAAdAAMAAAAOAAgAAAAcAAMAAAAOAAEAAAAcAAQAAAAOAAEAAAAcAAUAAAAOAAEAAAAdAAYAAAAOAAgAAAAeAAYAAAAOAAgAAAAfAAYAAAAOAAgAAAAfAAUAAAAOAAgAAAAfAAQAAAAOAAgAAAAeAAQAAAAOAAgAAAAdAAQAAAAOAAgAAAAdAAUAAAAOAAgAAAAeAAUAAAAOAAgAAAAgAAUAAAAOAAgAAAAgAAQAAAAOAAgAAAAgAAYAAAAOAAgAAAAeAAcAAAAOAAgAAAAdAAcAAAAOAAgAAAAcAAcAAAAOAAEAAAAcAAYAAAAOAAEAAAAeAAgAAAAOAAgAAAAfAAgAAAAOAAgAAAAfAAcAAAAOAAgAAAAgAAcAAAAOAAgAAAAdAAgAAAAOAAgAAAAcAAgAAAAOAAEAAAAgAAgAAAAOAAgAAAACAAkAAAAOAAgAAAADAAkAAAAOAAgAAAAEAAkAAAAOAAgAAAAFAAkAAAAOAAgAAAAGAAkAAAAOAAgAAAAHAAkAAAAQAAEAAAAGAAoAAAAOAAgAAAAGAAsAAAAOAAgAAAAFAAsAAAAOAAgAAAAEAAsAAAAOAAgAAAADAAsAAAAOAAgAAAADAAoAAAAOAAgAAAAEAAoAAAAOAAgAAAACAAoAAAAOAAgAAAABAAkAAAAOAAEAAAABAAoAAAAOAAEAAAACAAsAAAAOAAgAAAACAAwAAAAOAAgAAAACAA0AAAAOAAgAAAADAAwAAAAOAAgAAAAEAAwAAAAOAAgAAAAFAAoAAAAOAAgAAAABAAsAAAAOAAEAAAABAAwAAAAOAAEAAAADAA0AAAAOAAgAAAAEAA0AAAAOAAgAAAAFAAwAAAAOAAgAAAAFAA0AAAAOAAgAAAAGAA0AAAAOAAgAAAAGAAwAAAAOAAgAAAAHAAoAAAAQAAEAAAAHAAsAAAAQAAEAAAAHAAwAAAAQAAEAAAAHAA0AAAAQAAEAAAABAA0AAAAOAAEAAAAKAAkAAAAOAAEAAAAKAAoAAAAOAAEAAAAKAAsAAAAOAAEAAAAKAAwAAAAOAAEAAAAKAA0AAAAOAAEAAAALAA0AAAAOAAgAAAAMAA0AAAAOAAgAAAANAA0AAAAOAAgAAAAOAA0AAAAQAAEAAAAOAAwAAAAQAAEAAAAOAAsAAAAQAAEAAAAOAAoAAAAQAAEAAAAOAAkAAAAQAAEAAAANAAkAAAAOAAgAAAAMAAkAAAAOAAgAAAALAAkAAAAOAAgAAAAMAAoAAAAOAAgAAAAMAAsAAAAOAAgAAAALAAsAAAAOAAgAAAALAAwAAAAOAAgAAAALAAoAAAAOAAgAAAAMAAwAAAAOAAgAAAANAAwAAAAOAAgAAAANAAsAAAAOAAgAAAANAAoAAAAOAAgAAAAkAAIAAAAQAAEAAAAkAAMAAAAQAAEAAAAkAAQAAAAQAAEAAAAkAAUAAAAQAAEAAAAkAAYAAAAQAAEAAAAkAAcAAAAQAAEAAAAkAAgAAAAQAAEAAAAkAAkAAAAQAAEAAAAkAAoAAAAQAAEAAAAkAAsAAAAQAAEAAAAkAAwAAAAQAAEAAAAkAA0AAAAQAAEAAAAkAA4AAAAQAAEAAAAcAAkAAAAOAAEAAAAcAAoAAAAOAAEAAAAcAAsAAAAOAAEAAAAcAAwAAAAOAAEAAAAcAA0AAAAOAAEAAAAcAA4AAAAOAAEAAAAdAAkAAAAOAAgAAAAeAAkAAAAOAAgAAAAfAAkAAAAOAAgAAAAgAAkAAAAOAAgAAAAhAAkAAAAOAAgAAAAiAAkAAAAOAAgAAAAjAAkAAAAOAAgAAAAjAAgAAAAOAAgAAAAjAAcAAAAOAAgAAAAiAAYAAAAOAAgAAAAiAAUAAAAOAAgAAAAiAAQAAAAOAAgAAAAiAAMAAAAOAAgAAAAiAAIAAAAOAAgAAAAhAAIAAAAOAAgAAAAhAAEAAAAFAAEAAAAiAAEAAAAFAAEAAAAjAAIAAAAOAAgAAAAjAAMAAAAOAAgAAAAjAAQAAAAOAAgAAAAjAAUAAAAOAAgAAAAjAAYAAAAOAAgAAAAiAAcAAAAOAAgAAAAhAAUAAAAOAAgAAAAhAAQAAAAOAAgAAAAhAAMAAAAOAAgAAAAhAAYAAAAOAAgAAAAhAAcAAAAOAAgAAAAhAAgAAAAOAAgAAAAiAAgAAAAOAAgAAAAiAAoAAAAOAAgAAAAjAAoAAAAOAAgAAAAjAAsAAAAOAAgAAAAjAAwAAAAOAAgAAAAjAA0AAAAOAAgAAAAjAA4AAAAOAAgAAAAiAA4AAAAOAAgAAAAhAA4AAAAOAAgAAAAgAA4AAAAOAAgAAAAfAA4AAAAOAAgAAAAeAA4AAAAOAAgAAAAdAA4AAAAOAAgAAAAdAA0AAAAOAAgAAAAdAAwAAAAOAAgAAAAdAAsAAAAOAAgAAAAdAAoAAAAOAAgAAAAeAAoAAAAOAAgAAAAfAAoAAAAOAAgAAAAeAAsAAAAOAAgAAAAeAAwAAAAOAAgAAAAfAAwAAAAOAAgAAAAfAAsAAAAOAAgAAAAgAAoAAAAOAAgAAAAfAA0AAAAOAAgAAAAgAAwAAAAOAAgAAAAhAAsAAAAOAAgAAAAhAAoAAAAOAAgAAAAgAA0AAAAOAAgAAAAhAAwAAAAOAAgAAAAgAAsAAAAOAAgAAAAeAA0AAAAOAAgAAAAhAA0AAAAOAAgAAAAiAAsAAAAOAAgAAAAiAAwAAAAOAAgAAAAiAA0AAAAOAAgAAAAjAAEAAAAFAAEAAAAkAAEAAAAGAAEAAAA=")
+tile_set = ExtResource("3_h2yge")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=99718566]
+scale = Vector2(0.8, 0.8)
+collision_layer = 2
+script = ExtResource("1_h2yge")
+Bullet = ExtResource("5_xuqvo")
+
+[node name="Player" type="CollisionShape2D" parent="Player" unique_id=374243074]
+position = Vector2(133, 457)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=765577172]
+position = Vector2(138, 448)
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1823751759]
+position = Vector2(136, 448)
+scale = Vector2(2.55, 2.2999997)
+sprite_frames = SubResource("SpriteFrames_1vivr")
+animation = &"shoot"
+
+[node name="Marker2D" type="Marker2D" parent="Player/AnimatedSprite2D" unique_id=509423199]
+position = Vector2(17.254898, -3.0434723)
+scale = Vector2(0.39215687, 0.43478265)
+
+[node name="Crab" type="CharacterBody2D" parent="." unique_id=2139570593]
+position = Vector2(529, 396)
+scale = Vector2(2.5, 2.5)
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("29_facbu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Crab" unique_id=69459322]
+sprite_frames = SubResource("SpriteFrames_v5gy4")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Crab" unique_id=1940579328]
+position = Vector2(-1.5, 1)
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="RayCast2D" type="RayCast2D" parent="Crab" unique_id=260212268]
+position = Vector2(12.4, 3.9999995)
+target_position = Vector2(7.599991, 8.800003)
+
+[connection signal="animation_finished" from="Player/AnimatedSprite2D" to="Player" method="_on_animated_sprite_2d_animation_finished"]
